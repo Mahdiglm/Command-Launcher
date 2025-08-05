@@ -1,6 +1,6 @@
-# Changelog
-
 <div align="center">
+
+# Changelog
 
 > All notable changes to this project will be documented in this file.
 

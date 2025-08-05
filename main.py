@@ -10,7 +10,7 @@ from pathlib import Path
 class CommandLauncher:
     def __init__(self, root):
         self.root = root
-        self.root.title("Command Launcher")
+        self.root.title("Command Launcher v1.0.0")
         self.root.geometry("800x600")
         self.root.minsize(600, 400)
         
@@ -56,10 +56,20 @@ class CommandLauncher:
         main_frame.columnconfigure(1, weight=1)
         main_frame.rowconfigure(1, weight=1)
         
+        # Title and version frame
+        title_frame = ttk.Frame(main_frame)
+        title_frame.grid(row=0, column=0, columnspan=3, pady=(0, 10), sticky=(tk.W, tk.E))
+        title_frame.columnconfigure(0, weight=1)
+        
         # Title
-        title_label = ttk.Label(main_frame, text="Command Launcher", 
+        title_label = ttk.Label(title_frame, text="Command Launcher", 
                                font=('Arial', 16, 'bold'))
-        title_label.grid(row=0, column=0, columnspan=3, pady=(0, 10))
+        title_label.grid(row=0, column=0, sticky=tk.W)
+        
+        # Version label in corner
+        version_label = ttk.Label(title_frame, text="v1.0.0", 
+                                 font=('Arial', 10), foreground='gray')
+        version_label.grid(row=0, column=1, sticky=tk.E, padx=(0, 10))
         
         # Commands list frame
         list_frame = ttk.LabelFrame(main_frame, text="Saved Commands", padding="5")

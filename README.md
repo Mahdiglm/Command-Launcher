@@ -116,6 +116,7 @@ command_runner/
 ├── main.py              # Main application
 ├── README.md            # Documentation
 ├── LICENSE              # MIT License
+├── CHANGELOG.md         # Version history
 ├── .gitignore           # Git ignore rules
 └── main.spec            # PyInstaller configuration
 ```
@@ -184,6 +185,8 @@ command_runner/
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+For a complete list of changes, see the [CHANGELOG](CHANGELOG.md).
 
 </div>
 

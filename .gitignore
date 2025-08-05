@@ -1,0 +1,14 @@
+# Ignore everything
+*
+
+# But not these files...
+!main.py
+!README.md
+!LICENSE
+!.gitignore
+
+# And not these directories...
+!*/
+
+# But still ignore everything in subdirectories
+*/* 
